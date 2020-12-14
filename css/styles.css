@@ -252,8 +252,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  min-height: 600px;
+  width: 100%;
+  height: 100%;
   margin-right: auto;
   margin-left: auto;
 
@@ -263,7 +263,7 @@ ul {
 
 .overlay {
   max-width: 1600px;
-  height: 100%;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #c4c4c4;
