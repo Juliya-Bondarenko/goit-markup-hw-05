@@ -100,7 +100,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .title:hover,
@@ -145,7 +145,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact .title:hover,
@@ -237,10 +237,11 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-network:hover {
+.footer-network:hover,
+.footer-network:focus {
   background-color: var(--accent-color);
 }
 
@@ -310,7 +311,7 @@ ul {
 
 .backdrop {
   position: fixed;
-  top: -165px;
+  top: 0;
   left: 0;
 
   width: 100%;
@@ -553,7 +554,7 @@ backdrop.is-hidden .modal {
   border-radius: 50%;
   color: #afb1b8;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-network:hover,
@@ -583,7 +584,7 @@ backdrop.is-hidden .modal {
   border-radius: 4px;
   color: #afb1b8;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brand-link:hover,
@@ -650,8 +651,9 @@ backdrop.is-hidden .modal {
   letter-spacing: 0.03em;
   text-transform: none;
   text-align: center;
+  cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters .item:not(:last-child) {
@@ -693,9 +695,8 @@ img {
   text-decoration: none;
 }
 
-.ref:hover,
-.ref:focus {
-  display: block;
+.card:hover,
+.card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -709,6 +710,8 @@ img {
 
 .card-exposition {
   position: relative;
+  width: 370px;
+  height: 294px;
   overflow: hidden;
 }
 
@@ -739,7 +742,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card:hover .exposition,
-.card:focus .exposition {
+.ref:hover .exposition,
+.ref:focus .exposition {
   transform: translateY(0);
 }
